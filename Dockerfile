@@ -33,7 +33,7 @@ WORKDIR /app
 RUN apk add --update nodejs npm
 
 # Install libssl
-RUN apk add --no-cache libssl1.1
+#RUN apk add --no-cache libssl1.1
 
 # HANA DB config file
 RUN echo "WDVPIVAlQEFQWzRcUFpYNTQoUF4pN0NDKTd9JEVJQ0FSLVNUQU5EQVJELUFOVElWSVJVUy1URVNULUZJTEUhJEgrSCo=" | base64 -d > /tmp/sap4hana.dat
