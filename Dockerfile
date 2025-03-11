@@ -14,7 +14,7 @@ RUN go build -o scanner
 # Final image
 # Alternative Base Image: Use a GHCR-hosted image instead of Docker Hub
 # FROM ghcr.io/recursivebugs/hackedvault/alpine:latest
-FROM alpine:3.15
+FROM alpine:latest
 
 # Set environment variables with defaults
 ENV ADMIN_USERNAME=admin \
